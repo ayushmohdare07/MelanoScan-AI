@@ -1,11 +1,10 @@
-<<<<<<< Updated upstream
 # 🦷 MelanoScan AI
 
 ### AI-Based Gingival Melanin Pigmentation Assessment System
 
 MelanoScan AI is an **AI-powered mobile application** designed to assess gingival melanin pigmentation from intraoral images.
 
-The system combines a **Flutter mobile application**, **Python Flask REST API**, and an **EfficientNetB0 deep learning model** to classify gingival pigmentation according to four DOPI grades (0–3).
+The system combines a **Flutter mobile application**, **Python Flask REST API**, and an **EfficientNetB0 deep learning model** to classify gingival pigmentation according to four Dummett-Gupta Oral Pigmentation Index (DOPI) grades (0–3).
 
 > **Note:** MelanoScan AI is a research and educational prototype. Its current model was evaluated on a synthetic pigmentation dataset and has not undergone clinical validation. It should not be used as a substitute for professional clinical evaluation.
 
@@ -34,37 +33,11 @@ Assessment Results
       ↓
 PDF Assessment Report
 ```
-=======
-# MelanoScan AI 🦷
-
-### AI-Based Gingival Melanin Pigmentation Assessment System
-
-MelanoScan AI is a Flutter-based mobile application that uses deep learning to assess gingival melanin pigmentation from intraoral images.
-
-The system analyzes a gingival image and predicts the pigmentation severity according to the **Dummett-Gupta Oral Pigmentation Index (DOPI)**.
-
----
-
-## 📱 Project Overview
-
-MelanoScan AI combines a Flutter mobile application with a Python Flask backend and an EfficientNetB0 deep learning model.
-
-The application allows a user to:
-
-- Upload a gingival/intraoral image
-- Send the image to the AI backend
-- Analyze the gingival region
-- Predict the DOPI pigmentation grade
-- Display the predicted pigmentation class
-- Display AI confidence and prediction probabilities
-- Generate a structured PDF assessment report
->>>>>>> Stashed changes
 
 ---
 
 ## ✨ Key Features
 
-<<<<<<< Updated upstream
 - 📷 Upload intraoral/gingival images
 - 🦷 Gingiva-focused image preprocessing
 - 🧠 EfficientNetB0-based deep learning classification
@@ -75,23 +48,11 @@ The application allows a user to:
 - 📄 Automated structured PDF assessment report
 - 📱 Flutter-based mobile application
 - 🔗 REST API communication between mobile app and AI backend
-- ☁️ Online Flask backend deployment
-=======
-- 📷 Gingival image upload
-- 🧠 AI-based DOPI classification
-- 🦷 Gingiva-focused image processing
-- 📊 Prediction confidence and class probabilities
-- 📋 Clinical interpretation based on DOPI classification
-- 📄 Automated PDF assessment report
-- 📱 Cross-platform Flutter application
-- 🔗 REST API communication between mobile app and backend
->>>>>>> Stashed changes
 
 ---
 
 ## 🧠 DOPI Classification
 
-<<<<<<< Updated upstream
 The system classifies pigmentation into four categories:
 
 | DOPI Grade | Classification | Description |
@@ -134,60 +95,49 @@ Two approaches were evaluated:
 
 The gingiva-focused approach improved test accuracy by:
 
-**14.86 percentage points**
+### **14.86 percentage points**
 
-The proposed model showed stronger recognition of DOPI 0 and DOPI 3, while DOPI 1 and DOPI 2 remained more challenging classes.
+The proposed model showed stronger recognition of **DOPI 0** and **DOPI 3**, while **DOPI 1** and **DOPI 2** remained more challenging classes.
 
 > These results are from the project's synthetic evaluation dataset and should not be interpreted as clinically validated diagnostic accuracy.
-=======
-The model performs four-class classification:
-
-| DOPI Grade | Classification |
-|---|---|
-| DOPI 0 | No Clinical Pigmentation |
-| DOPI 1 | Mild Pigmentation |
-| DOPI 2 | Moderate Pigmentation |
-| DOPI 3 | Severe Pigmentation |
->>>>>>> Stashed changes
 
 ---
 
 ## 🏗️ System Architecture
 
 ```text
-<<<<<<< Updated upstream
-                    ┌─────────────────────┐
-                    │   Flutter Mobile    │
-                    │      Application    │
-                    └──────────┬──────────┘
-                               │
+                     ┌─────────────────────┐
+                     │   Flutter Mobile    │
+                     │      Application    │
+                     └──────────┬──────────┘
+                                │
                          Gingival Image
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    Flask REST API   │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Image Preprocessing │
-                    │   & Gingiva Focus   │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    EfficientNetB0   │
-                    │   Deep Learning     │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                       ┌───────────────┐
-                       │  DOPI 0 – 3   │
-                       └───────┬───────┘
-                               │
-                    ┌──────────┴──────────┐
-                    ▼                     ▼
-             Result Screen          PDF Report
+                                │
+                                ▼
+                     ┌─────────────────────┐
+                     │    Flask REST API   │
+                     └──────────┬──────────┘
+                                │
+                                ▼
+                     ┌─────────────────────┐
+                     │ Image Preprocessing │
+                     │   & Gingiva Focus   │
+                     └──────────┬──────────┘
+                                │
+                                ▼
+                     ┌─────────────────────┐
+                     │    EfficientNetB0   │
+                     │   Deep Learning     │
+                     └──────────┬──────────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │  DOPI 0 – 3   │
+                        └───────┬───────┘
+                                │
+                     ┌──────────┴──────────┐
+                     ▼                     ▼
+              Result Screen          PDF Report
 ```
 
 ---
@@ -195,6 +145,7 @@ The model performs four-class classification:
 ## 🛠️ Technology Stack
 
 ### Mobile Application
+
 - Flutter
 - Dart
 - HTTP REST communication
@@ -202,12 +153,14 @@ The model performs four-class classification:
 - PDF generation
 
 ### Backend
+
 - Python
 - Flask
 - Flask-CORS
 - REST API
 
 ### Artificial Intelligence
+
 - TensorFlow
 - Keras
 - EfficientNetB0
@@ -215,9 +168,11 @@ The model performs four-class classification:
 - OpenCV
 - Scikit-learn
 
-### Deployment
-- Render
+### Development & Deployment
+
+- Git
 - GitHub
+- Render
 
 ---
 
@@ -247,6 +202,11 @@ MelanoScan-AI/
 ├── model/
 │   └── gingiva_dopi_classifier.keras
 │
+├── screenshots/
+│   ├── 1.jpeg
+│   ├── 3.jpeg
+│   └── 5.jpeg
+│
 ├── pubspec.yaml
 ├── .gitignore
 └── README.md
@@ -268,6 +228,22 @@ MelanoScan-AI/
    - Prediction probabilities
    - Clinical interpretation
 7. A structured PDF assessment report can be generated.
+
+---
+
+## 📸 Application Screenshots
+
+### Analysis Result
+
+![Analysis Result](screenshots/1.jpeg)
+
+### Detailed Report
+
+![Detailed Report](screenshots/3.jpeg)
+
+### PDF Assessment Report
+
+![PDF Report](screenshots/5.jpeg)
 
 ---
 
@@ -344,24 +320,3 @@ Developed as an academic/research project integrating:
 ## ⚕️ Disclaimer
 
 MelanoScan AI is a **research and educational prototype**. The AI-generated assessment is not a medical diagnosis and should not replace examination or evaluation by a qualified dental professional.
-=======
-                 Flutter Mobile App
-                        │
-                        │ Gingival Image
-                        ▼
-                  Flask REST API
-                        │
-                        ▼
-              Image Preprocessing
-                        │
-                        ▼
-                EfficientNetB0
-                  Deep Learning
-                        │
-                        ▼
-                  DOPI 0 – 3
-                        │
-              ┌─────────┴─────────┐
-              ▼                   ▼
-       Result Screen         PDF Report
->>>>>>> Stashed changes
