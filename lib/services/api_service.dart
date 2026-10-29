@@ -4,11 +4,10 @@ import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 
 class ApiService {
-  // Backend URL
-  // For now, use your current laptop IP for phone testing.
-  // Later, this will be replaced with the permanent online API URL.
+  // Permanent online Render backend
   static const String baseUrl = 'http://10.83.188.203:5000';
 
+  // Check whether the backend is available
   static Future<bool> checkServer() async {
     try {
       final response = await http
@@ -21,6 +20,7 @@ class ApiService {
     }
   }
 
+  // Send image to the AI backend for DOPI analysis
   static Future<Map<String, dynamic>> analyzeImage(XFile imageFile) async {
     try {
       final bytes = await imageFile.readAsBytes();
@@ -33,8 +33,9 @@ class ApiService {
         http.MultipartFile.fromBytes('image', bytes, filename: imageFile.name),
       );
 
+      // Render Free may take some time to wake up and load the model.
       final streamedResponse = await request.send().timeout(
-        const Duration(seconds: 60),
+        const Duration(seconds: 180),
       );
 
       final response = await http.Response.fromStream(streamedResponse);

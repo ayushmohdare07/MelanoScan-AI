@@ -57,44 +57,6 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-
-        actions: [
-          Container(
-            margin: const EdgeInsets.only(right: 20),
-
-            padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 7),
-
-            decoration: BoxDecoration(
-              color: const Color(0xFFE8F5F3),
-              borderRadius: BorderRadius.circular(30),
-            ),
-
-            child: const Row(
-              children: [
-                Icon(
-                  Icons.science_outlined,
-                  size: 16,
-                  color: Color(0xFF00897B),
-                ),
-
-                SizedBox(width: 6),
-
-                // =================================================
-                // ISSUE #1 FIX
-                // Changed "Research Prototype" to "AI Assessment"
-                // =================================================
-                Text(
-                  'AI Assessment',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: Color(0xFF00796B),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
       ),
 
       body: LayoutBuilder(
@@ -325,9 +287,7 @@ class HomeScreen extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: const Color(0xFF00695C).withValues(alpha: 0.20),
-
                 blurRadius: 30,
-
                 offset: const Offset(0, 12),
               ),
             ],
@@ -375,12 +335,12 @@ class HomeScreen extends StatelessWidget {
 
           decoration: BoxDecoration(
             color: Colors.white.withValues(alpha: 0.14),
-
             borderRadius: BorderRadius.circular(30),
           ),
 
           child: const Text(
             'AI-POWERED DENTAL ASSESSMENT',
+
             style: TextStyle(
               color: Colors.white,
               fontSize: 11,
@@ -459,6 +419,7 @@ class HomeScreen extends StatelessWidget {
 
           Text(
             text,
+
             style: const TextStyle(
               color: Colors.white,
               fontSize: 12,
@@ -606,7 +567,6 @@ class HomeScreen extends StatelessWidget {
                   colors: gradient,
 
                   begin: Alignment.topLeft,
-
                   end: Alignment.bottomRight,
                 ),
 
@@ -650,6 +610,7 @@ class HomeScreen extends StatelessWidget {
                             Flexible(
                               child: Text(
                                 title,
+
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 19,
@@ -674,6 +635,7 @@ class HomeScreen extends StatelessWidget {
 
                               child: Text(
                                 tag,
+
                                 style: const TextStyle(
                                   color: Colors.white70,
                                   fontSize: 8,
@@ -761,6 +723,7 @@ class HomeScreen extends StatelessWidget {
         'Take a clear gingival image.',
         const Color(0xFF00897B),
       ),
+
       (
         '02',
         Icons.crop_free_rounded,
@@ -768,6 +731,7 @@ class HomeScreen extends StatelessWidget {
         'Review the selected image.',
         const Color(0xFF3949AB),
       ),
+
       (
         '03',
         Icons.psychology_outlined,
@@ -775,6 +739,7 @@ class HomeScreen extends StatelessWidget {
         'AI evaluates pigmentation.',
         const Color(0xFF7E57C2),
       ),
+
       (
         '04',
         Icons.analytics_outlined,
@@ -907,13 +872,16 @@ class HomeScreen extends StatelessWidget {
         'Pink tissue with no clinical pigmentation.',
         const Color(0xFF43A047),
       ),
+
       ('1', 'Mild', 'Mild light-brown pigmentation.', const Color(0xFF8D6E63)),
+
       (
         '2',
         'Moderate',
         'Medium-brown or mixed pigmentation.',
         const Color(0xFF6D4C41),
       ),
+
       (
         '3',
         'Severe',
@@ -1041,12 +1009,14 @@ class HomeScreen extends StatelessWidget {
         'Analyze gingival images digitally.',
         const Color(0xFF00897B),
       ),
+
       (
         Icons.psychology_outlined,
         'AI-Assisted',
         'Use deep learning for DOPI prediction.',
         const Color(0xFF5E35B1),
       ),
+
       (
         Icons.bar_chart_rounded,
         'DOPI-Based',

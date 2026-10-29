@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # 🦷 MelanoScan AI
 
 ### AI-Based Gingival Melanin Pigmentation Assessment System
@@ -33,11 +34,37 @@ Assessment Results
       ↓
 PDF Assessment Report
 ```
+=======
+# MelanoScan AI 🦷
+
+### AI-Based Gingival Melanin Pigmentation Assessment System
+
+MelanoScan AI is a Flutter-based mobile application that uses deep learning to assess gingival melanin pigmentation from intraoral images.
+
+The system analyzes a gingival image and predicts the pigmentation severity according to the **Dummett-Gupta Oral Pigmentation Index (DOPI)**.
+
+---
+
+## 📱 Project Overview
+
+MelanoScan AI combines a Flutter mobile application with a Python Flask backend and an EfficientNetB0 deep learning model.
+
+The application allows a user to:
+
+- Upload a gingival/intraoral image
+- Send the image to the AI backend
+- Analyze the gingival region
+- Predict the DOPI pigmentation grade
+- Display the predicted pigmentation class
+- Display AI confidence and prediction probabilities
+- Generate a structured PDF assessment report
+>>>>>>> Stashed changes
 
 ---
 
 ## ✨ Key Features
 
+<<<<<<< Updated upstream
 - 📷 Upload intraoral/gingival images
 - 🦷 Gingiva-focused image preprocessing
 - 🧠 EfficientNetB0-based deep learning classification
@@ -49,11 +76,22 @@ PDF Assessment Report
 - 📱 Flutter-based mobile application
 - 🔗 REST API communication between mobile app and AI backend
 - ☁️ Online Flask backend deployment
+=======
+- 📷 Gingival image upload
+- 🧠 AI-based DOPI classification
+- 🦷 Gingiva-focused image processing
+- 📊 Prediction confidence and class probabilities
+- 📋 Clinical interpretation based on DOPI classification
+- 📄 Automated PDF assessment report
+- 📱 Cross-platform Flutter application
+- 🔗 REST API communication between mobile app and backend
+>>>>>>> Stashed changes
 
 ---
 
 ## 🧠 DOPI Classification
 
+<<<<<<< Updated upstream
 The system classifies pigmentation into four categories:
 
 | DOPI Grade | Classification | Description |
@@ -101,12 +139,23 @@ The gingiva-focused approach improved test accuracy by:
 The proposed model showed stronger recognition of DOPI 0 and DOPI 3, while DOPI 1 and DOPI 2 remained more challenging classes.
 
 > These results are from the project's synthetic evaluation dataset and should not be interpreted as clinically validated diagnostic accuracy.
+=======
+The model performs four-class classification:
+
+| DOPI Grade | Classification |
+|---|---|
+| DOPI 0 | No Clinical Pigmentation |
+| DOPI 1 | Mild Pigmentation |
+| DOPI 2 | Moderate Pigmentation |
+| DOPI 3 | Severe Pigmentation |
+>>>>>>> Stashed changes
 
 ---
 
 ## 🏗️ System Architecture
 
 ```text
+<<<<<<< Updated upstream
                     ┌─────────────────────┐
                     │   Flutter Mobile    │
                     │      Application    │
@@ -295,3 +344,24 @@ Developed as an academic/research project integrating:
 ## ⚕️ Disclaimer
 
 MelanoScan AI is a **research and educational prototype**. The AI-generated assessment is not a medical diagnosis and should not replace examination or evaluation by a qualified dental professional.
+=======
+                 Flutter Mobile App
+                        │
+                        │ Gingival Image
+                        ▼
+                  Flask REST API
+                        │
+                        ▼
+              Image Preprocessing
+                        │
+                        ▼
+                EfficientNetB0
+                  Deep Learning
+                        │
+                        ▼
+                  DOPI 0 – 3
+                        │
+              ┌─────────┴─────────┐
+              ▼                   ▼
+       Result Screen         PDF Report
+>>>>>>> Stashed changes
